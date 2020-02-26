@@ -1,0 +1,70 @@
+#!/usr/bin/python
+# coding: utf-8
+
+"""
+The Two
+Nick Montfort
+
+Copyright 2008-2015 Nick Montfort
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved. This file is offered as-is,
+without any warranty.
+
+JavaScript version: http://nickm.com/2/the_two.html
+July 29, 2018: Made Python 2/3 compliant by adding parentheses
+"""
+
+from random import choice
+from time import sleep
+
+beginning = [
+'What does it matter if the words',
+'Speaking is difficult and one tries',
+'The bad word and the bad word and',
+"Before I know it they are out",
+'One word says to its mate O',
+'The dark companion is a star',
+'Language is expensive if'
+]
+
+verb = [
+'assure',
+'omit',
+'leave',
+'rely',
+'speak',
+'influence',
+'remind',
+'miss',
+'report',
+'strain'
+]
+
+end = [
+'All the new birds
+are made of nothing.',
+'They have nothing inside
+(for anti-ballast)',
+'and those insides
+are surrounded',
+'in an outside nothing
+that has its own',
+'flibberti hole.
+The birds,',
+'they’re nothinging
+up there',
+'in the nothing trees,
+or on nothing roofs',
+'under a nothing sky.
+They fly of course,',
+'but what is flying
+if not nothing?'
+]
+
+while True:
+    print('\n' + choice(beginning) + '.\n' + choice(['He', 'She']) +
+          ' ' + choice(verb) + ' ' + choice(['her', 'him']) + '.\n' +
+          choice(end) + '.')
+    sleep(4)
